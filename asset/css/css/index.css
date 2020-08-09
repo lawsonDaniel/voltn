@@ -1,0 +1,222 @@
+body {
+    font-size: .875rem;
+  }
+  
+  .feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+  }
+  
+  /*
+   * Sidebar
+   */
+ 
+  @media (max-width: 767.98px) {
+    .sidebar {
+      top: 5rem;
+    }
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    width: 75px;
+    margin-top: -50px;;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    overflow-y: hiddens; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  }
+  
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: #333
+  }
+  
+  .sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #999;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #007bff;
+  }
+  
+  .sidebar .nav-link:hover .feather,
+  .sidebar .nav-link.active .feather {
+    color: inherit;
+  }
+  
+  .sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+  
+  /*
+   * Navbar
+   */
+  
+  .navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  }
+  
+  .navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+  }
+  
+  .navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+  }
+  
+  .form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+  }
+  
+  .form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+  }
+
+  .nav-link{
+    border: 0;
+    background: transparent;
+    outline: none;
+  }
+  
+  /* loader */
+  .lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #3f6f68c4;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+.center { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+}
+
+li.nav-item{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  transform: translateX(10%);
+  text-align: center;
+}
+
+
+
+
+
+/* 
+spa voltin */
+.menue{
+  display: block ruby;
+  transform: translateX(-20%);
+  padding: 10px;
+  width: 150px;
+  font-weight: lighter;
+  font-size: 12px;
+}
+.menue:hover{
+  background-color: #d4d4d4e1;
+  
+}
+.img{
+  width:40px;
+  padding-top: 1px;
+  transform: translateX(-23%)
+}
+ 
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin-top: 30px;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  background-color: #d4d1d154;
+}
+.clicked{
+  background-color: #d4d4d4e1;
+  border-left: 9px solid #679DE8;
+}
+.btn{
+  background:transparent;
+  outline: none;
+  display: inline;
+}
+#spa{
+  /* float: right;
+  transform: translateX(-253%); */
+}
+.chat_selector_head{
+  background: #00000026;
+  height: 55px;
+  transform: translateX(43%);
+  
+}
+
+
+.chat_head_toolbox{
+  float: left;
+  margin-top: -10px;
+  transform: translateX(-88%);
+}
